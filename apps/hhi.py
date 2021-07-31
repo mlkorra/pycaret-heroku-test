@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 from pathlib import Path
-from joblib import load
+import pickle
 from sklearn.ensemble import AdaBoostRegressor
 import numpy as np
 
@@ -26,8 +26,9 @@ def app():
     st.write(data)
 
     #@st.cache(allow_output_mutation=True)
-    def load_model(path='apps/hhi_sklearn1.pkl'):
-        model = load(path)
+    def load_model(path='apps/hhi_sklearn_final.pkl'):
+        print("loaded")
+        model = pickle.load(open(path,'rb'))
         return model
 
     clf = load_model()
@@ -45,7 +46,7 @@ def app():
         #clf = load_model()
         if submitted:
             #my_data = np.array([company_revenue,competitor_count[0],competitor_revenue,competitor_count[9],competitor_count[5],competitor_count[3],competitor_count[8],competitor_count[7],competitor_count[6],competitor_count[1],competitor_count[2],competitor_count[4]])
-            my_data = np.array([competitor_count,company_revenue,competitor_revenue])
+            my_data = np.array([company_revenue,competitor_count,competitor_revenue])
             print(my_data)
             try:
                 prediction = clf.predict([my_data])
