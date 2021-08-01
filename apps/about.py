@@ -32,7 +32,7 @@ def app():
     #st.markdown(read_markdown("task2.md"))
     #st.markdown(read_markdown("task3.md"))
     st.markdown(read_markdown("task4.md"))
-    st.components.v1.html(load_dataviz(),height = 600,width = 800)
+    st.components.v1.html(load_dataviz(),height = 800,width = 800)
     #st.markdown(read_markdown("task5.md"))
     #st.markdown(read_markdown("task6.md"))
     #st.markdown(read_markdown("task7.md"))
