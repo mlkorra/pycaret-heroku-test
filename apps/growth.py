@@ -41,7 +41,7 @@ def app():
 
     if st.sidebar.checkbox("Predict Growth",False):
         st.markdown(""" ##  Predict Employee Growth of a startup based on the following features """)
-
+          
         user = st.form(key = 'growth_predict_form')
         #city = float(user.number_input(label='City'))
         cities_list = list(city_cfg.keys())
@@ -67,7 +67,6 @@ def app():
 
                     st.markdown(""" ### Employee Growth : """ + str(result) + "%")
 
-                    #st.write(prediction[0])
 
                 except Exception as exc:
                     user.error(f"Could not make prediction. {exc}")
