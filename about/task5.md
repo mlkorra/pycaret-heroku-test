@@ -25,4 +25,4 @@
 
 | Objective     | Model Used             | Accuracy | Recall | Precision | F1   |
 | ------------- | --------------------  -| ---      | ---    | ----      | ---- |
-| Predict Status| RandomForest Classifier| 0.84     | 0.94   | 0.832     | 0.88 |
+| Status| RandomForest Classifier| 0.84     | 0.94   | 0.832     | 0.88 |
