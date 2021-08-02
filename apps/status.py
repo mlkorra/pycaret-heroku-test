@@ -31,7 +31,7 @@ def app():
     @st.cache
     def load_data():
         data = pd.read_csv("apps/Cleaned_startup data [data15].csv")
-        return data
+        return data.iloc[:,2:]
     data = load_data()
     st.write(data)
 
