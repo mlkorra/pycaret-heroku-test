@@ -17,4 +17,4 @@ def app():
     components.html(load_dataviz(),height = 600,width = 1600)
     
     st.text(" \n \n ")
-    st.write("For more details on how to copy the dashboard,you can check the About section!") 
+    #st.write("For more details on how to copy the dashboard,you can check the About section!") 

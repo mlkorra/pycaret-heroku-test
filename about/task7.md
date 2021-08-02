@@ -5,7 +5,7 @@
 
 - 4000 startups with their industry groups, description and location were collated to form a corpus.
 
-- **Topic modeling**  using BERTopic was performed on the corpus. This resulted in a probabilty matrix of dimension =  (number of startups) * (number of topics) 
+- **Topic modelling**  using BERTopic was performed on the corpus. This resulted in a probabilty matrix of dimension =  (number of startups) * (number of topics) 
 
 - To visualise how saturated a market space is, UMAP algorithm was used to reduce the matrix into 2 dimensional embeddings which preserves local as well as global distance thus giving meaning to the distance between each embedding.
 
