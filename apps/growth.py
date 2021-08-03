@@ -50,7 +50,7 @@ def app():
         
         employees = (user.slider("Number of Employees",1,5000))
         founded_year = user.slider("Founded Year",2000,2020)
-        city_ranking = (user.slider("City Rank",1,100))
+        city_ranking = (user.slider("City Rank of the Startup",1,100))
         estimated_revenue = float(user.slider("Estimated Revenue (in millions)",1,1000))
         job_openings  = (user.slider("No. of Job Openings",1,500))
   

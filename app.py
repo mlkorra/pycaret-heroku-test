@@ -11,8 +11,8 @@ def main():
     app.add_app("HHI ",hhi.app)
     app.add_app("Growth",growth.app)
     app.add_app("Status",status.app)
-    app.add_app("Trading View Dashboard",trading_view_db.app)
     app.add_app("Competitive Analysis",competitive_analysis.app)
+    app.add_app("Trading View Dashboard",trading_view_db.app)
     app.run()
 
 if __name__ == "__main__":
