@@ -15,7 +15,7 @@ def app():
     dataset.head()
 
     Title = "HHI"
-    Description="The Herfindahl index is a measure of the size of firms in relation to the industry they are in and an indicator of the amount of competition among them."
+    Description=r"> The Herfindahl index is a measure of the size of firms in relation to the industry they are in and an indicator of the amount of competition among them."
     st.title(Title)
     st.markdown(Description)
 
@@ -27,7 +27,6 @@ def app():
     data = load_data()
     st.write(data)
 
-    #@st.cache(allow_output_mutation=True)
     def load_model(path='apps/hhi_sklearn_final.pkl'):
         model = pickle.load(open(path,'rb'))
         return model

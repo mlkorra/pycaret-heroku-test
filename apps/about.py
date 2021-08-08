@@ -16,7 +16,7 @@ def load_lottie_json(path='images/startups.json'):
     lottie_json = json.load(f)
     return lottie_json
 
-@st.cache
+
 def load_dataviz(path='images/eda.html'):
     with open(path) as f:
         eda = f.read()
@@ -33,9 +33,10 @@ def app():
     st.markdown(read_markdown("task2.md"))
     st.markdown(read_markdown("task3.md"))
     st.markdown(read_markdown("task4.md"))
-    st.components.v1.html(load_dataviz(),height = 750,width = 800)
+    st.components.v1.html(load_dataviz(),height = 900,width = 800)
+    
     st.markdown(read_markdown("task5.md"))
-    st.markdown(read_markdown("task6.md"))
+    st.markdown(read_markdown("task6.md"))  
     
     st.image('images/task666.png',caption='credits : PyCaret Creator - Moez Ali')
     #st.markdown(read_markdown("futurework.md"))

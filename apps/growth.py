@@ -36,7 +36,7 @@ model = Load_Model()
 def app():
 
     st.title("Predict Growth %")
-    st.markdown("Predict the Employee Growth percentage")
+    st.markdown(r"> Predict the Employee Growth percentage")
     st.write(load_data())
 
     if st.sidebar.checkbox("Predict Growth",False):
